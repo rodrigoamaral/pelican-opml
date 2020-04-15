@@ -1,3 +1,3 @@
-# opml
+# pelican-opml
 
-A small script to read OPML files.
+A Pelican plugin to read OPML files and insert its contents in a page.
