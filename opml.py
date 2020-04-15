@@ -1,4 +1,5 @@
 import sys
+import json
 from lxml import etree
 
 
@@ -61,6 +62,13 @@ class OPML:
         return f"<ul>\n{list_items}\n</ul>"
 
 
+    def to_json(self, ensure_ascii=False):
+        """Retrieve links as a JSON object list string."""
+
+        json_items = [{'text': item.get('text'), 'xmlUrl': item.get('xmlUrl')} for item in self.outlines]
+
+        return json.dumps(json_items, ensure_ascii=ensure_ascii)
+
 
 if __name__ == "__main__":
     
@@ -72,3 +80,4 @@ if __name__ == "__main__":
     opml = OPML(input_file)
     print(opml.to_markdown())
     print(opml.to_html())
+    print(opml.to_json())
