@@ -56,7 +56,7 @@ class OPML:
     def to_html(self):
         """Retrieve links as a HTML list string."""
 
-        list_items = "\n\t".join(f"<li><a href=\"{item.get('xmlUrl')}\">{item.get('text')}</a></li>" for item in self.outlines)
+        list_items = "\n".join(f"\t<li><a href=\"{item.get('xmlUrl')}\">{item.get('text')}</a></li>" for item in self.outlines)
 
         return f"<ul>\n{list_items}\n</ul>"
 
@@ -71,3 +71,4 @@ if __name__ == "__main__":
 
     opml = OPML(input_file)
     print(opml.to_markdown())
+    print(opml.to_html())
