@@ -1,6 +1,5 @@
 import sys
 import os
-from lxml import etree
 from pelican import signals
 
 from .opml import OPML
