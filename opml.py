@@ -15,7 +15,7 @@ class OPML:
         self._sourcefile = filename
         self._tree = self._parse_opml()
         self._root = self._get_root()
-        self.outlines = [e for e in self._root.iter("outline") if self._is_leaf_node(e)]
+        self.outlines = sorted([e for e in self._root.iter("outline") if self._is_leaf_node(e)], key=lambda item: item.get("text"))
 
 
     def __len__(self):
