@@ -1,10 +1,14 @@
 import sys
 import json
+from collections import namedtuple
 from lxml import etree
 
 
 class InvalidOPMLException(Exception):
     pass
+
+
+Outline = namedtuple("Outline", ["text", "feed_url"])
 
 
 class OPML:
@@ -15,7 +19,7 @@ class OPML:
         self._sourcefile = filename
         self._tree = self._parse_opml()
         self._root = self._get_root()
-        self.outlines = sorted([e for e in self._root.iter("outline") if self._is_leaf_node(e)], key=lambda item: item.get("text"))
+        self.outlines = sorted([Outline(e.get("text"), e.get("xmlUrl")) for e in self._root.iter("outline") if self._is_leaf_node(e)], key=lambda item: item.text)
 
 
     def __len__(self):
@@ -51,13 +55,13 @@ class OPML:
     def to_markdown(self):
         """Retrieve links as a mardown list string."""
 
-        return "\n".join(f"- [{item.get('text')}]({item.get('xmlUrl')})" for item in self.outlines)
+        return "\n".join(f"- [{item.text}]({item.feed_url})" for item in self.outlines)
 
 
     def to_html(self):
         """Retrieve links as a HTML list string."""
 
-        list_items = "\n".join(f"\t<li><a href=\"{item.get('xmlUrl')}\">{item.get('text')}</a></li>" for item in self.outlines)
+        list_items = "\n".join(f"\t<li><a href=\"{item.feed_url}\">{item.text}</a></li>" for item in self.outlines)
 
         return f"<ul>\n{list_items}\n</ul>"
 
@@ -65,7 +69,7 @@ class OPML:
     def to_json(self, ensure_ascii=False):
         """Retrieve links as a JSON object list string."""
 
-        json_items = [{'text': item.get('text'), 'xmlUrl': item.get('xmlUrl')} for item in self.outlines]
+        json_items = [{'text': item.text, 'feed_url': item.feed_url} for item in self.outlines]
 
         return json.dumps(json_items, ensure_ascii=ensure_ascii)
 
