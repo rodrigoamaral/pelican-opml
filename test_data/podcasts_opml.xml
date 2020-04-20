@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<opml version="1.0">
+  <head>
+    <title>Pocket Casts Feeds</title>
+  </head>
+  <body>
+    <outline text="feeds">
+      <outline type="rss" text="Scicast" xmlUrl="http://www.deviante.com.br/podcasts/scicast/feed/" />
+      <outline type="rss" text="Dragões de Garagem" xmlUrl="HTTP://feeds.feedburner.com/dragoesdegaragem" />
+      <outline type="rss" text="Talk Python To Me - Python conversations for passionate developers" xmlUrl="https://talkpython.fm/episodes/rss" />
+      <outline type="rss" text="Bola Presa" xmlUrl="https://anchor.fm/s/6e0648c/podcast/rss" />
+      <outline type="rss" text="The Tim Ferriss Show" xmlUrl="https://rss.art19.com/tim-ferriss-show" />
+      <outline type="rss" text="Hipsters Ponto Tech" xmlUrl="https://hipsters.tech/feed/podcast/" />
+      <outline type="rss" text="Data Engineering Podcast" xmlUrl="https://www.dataengineeringpodcast.com/feed/mp3/" />
+      <outline type="rss" text="NerdCast" xmlUrl="https://jovemnerd.com.br/feed-nerdcast/" />
+      <outline type="rss" text="The Stack Overflow Podcast" xmlUrl="https://stackoverflow.blog/podcasts/?feed=podcast" />
+      <outline type="rss" text="Mupoca" xmlUrl="https://www.spreaker.com/show/3511542/episodes/feed" />
+      <outline type="rss" text="Benzina" xmlUrl="https://feed.megafono.host/benzina-no-meiao" />
+      <outline type="rss" text="The Python Podcast.__init__" xmlUrl="https://www.podcastinit.com/feed/mp3/" />
+      <outline type="rss" text="Cozinha em tempos de guerra" xmlUrl="https://anchor.fm/s/184b4b10/podcast/rss" />
+      <outline type="rss" text="Pouco Pixel" xmlUrl="https://anchor.fm/s/6cfe134/podcast/rss" />
+      <outline type="rss" text="Bala na Cesta" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:83912468/sounds.rss" />
+      <outline type="rss" text="Casual English lessons" xmlUrl="https://esl.culips.com/feed/podcast/" />
+      <outline type="rss" text="AntiCast" xmlUrl="https://www.spreaker.com/show/3221921/episodes/feed" />
+      <outline type="rss" text="CYBER" xmlUrl="https://rss.acast.com/cyber" />
+      <outline type="rss" text="Foro de Teresina" xmlUrl="http://forodeteresina.libsyn.com/rss" />
+      <outline type="rss" text="A Terra é redonda" xmlUrl="https://aterraeredonda.libsyn.com/rss" />
+      <outline type="rss" text="Python Bytes" xmlUrl="https://pythonbytes.fm/episodes/rss" />
+      <outline type="rss" text="Xadrez Verbal" xmlUrl="http://www.central3.com.br/category/podcasts/xadrez-verbal/feed/" />
+      <outline type="rss" text="Boa Noite Internet" xmlUrl="https://www.spreaker.com/show/3258232/episodes/feed" />
+      <outline type="rss" text="Curto Circuito" xmlUrl="http://feeds.soundcloud.com/users/soundcloud:users:53726848/sounds.rss" />
+      <outline type="rss" text="Braincast" xmlUrl="https://feeds.simplecast.com/AZQtlzze" />
+      <outline type="rss" text="Naruhodo" xmlUrl="http://feeds.feedburner.com/naruhodopodcast" />
+      <outline type="rss" text="ToadCast" xmlUrl="http://feeds.feedburner.com/toadcast" />
+      <outline type="rss" text="IRL - Online Life Is Real Life" xmlUrl="https://feeds.mozilla-podcasts.org/irl" />
+      <outline type="rss" text="Django Chat" xmlUrl="https://feeds.simplecast.com/WpQaX_cs" />
+      <outline type="rss" text="Pizza de Dados" xmlUrl="https://podcast.pizzadedados.com/feed.xml" />
+      <outline type="rss" text="DataFramed" xmlUrl="https://feeds.buzzsprout.com/147669.rss" />
+      <outline type="rss" text="Guia Prático" xmlUrl="https://manualdousuario.net/feed/podcast/guia-pratico" />
+      <outline type="rss" text="Inglês Todos os Dias" xmlUrl="http://feeds.feedburner.com/inglestodososdias" />
+      <outline type="rss" text="Lado B do Rio" xmlUrl="http://www.central3.com.br/category/podcasts/lado-b-do-rio/feed/" />
+      <outline type="rss" text="The Real Python Podcast" xmlUrl="https://realpython.com/podcasts/rpp/feed" />
+    </outline>
+  </body>
+</opml>
